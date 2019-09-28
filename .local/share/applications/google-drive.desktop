@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment=
+Exec=firefox https://drive.google.com/drive/my-drive
+Icon=google-drive
+Name=Google Drive
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

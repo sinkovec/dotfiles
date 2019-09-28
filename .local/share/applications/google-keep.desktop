@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment=
+Exec=firefox https://keep.google.com/
+Icon=google-keep
+Name=Google Keep
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

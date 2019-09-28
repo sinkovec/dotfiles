@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment=
+Exec=firefox https://photos.google.com/
+Icon=google-photos
+Name=Google Photos
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
