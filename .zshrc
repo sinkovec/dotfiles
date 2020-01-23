@@ -1,47 +1,62 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+TERM="xterm-256color"
+
 # Path to your oh-my-zsh installation.
 export ZSH=/usr/share/oh-my-zsh
+export ZSH_CUSTOM=$ZSH/custom
+
+export PIPENV_VENV_IN_PROJECT=1
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_MODE="nerdfont-complete"
-source $ZSH/themes/powerlevel9k/powerlevel9k.zsh-theme
+source $ZSH_CUSTOM/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 POWERLEVEL9K_DISABLE_RPROMPT=true
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs)
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=' \uf101 '
 
-POWERLEVEL9K_OS_ICON_BACKGROUND=000
-POWERLEVEL9K_OS_ICON_FOREGROUND=015
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir dir_writable virtualenv vcs)
+
+POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR='%F{008}\uf460%F{008}'
+
+POWERLEVEL9K_OS_ICON_BACKGROUND='clear'
+POWERLEVEL9K_OS_ICON_FOREGROUND='white'
 
 POWERLEVEL9K_CONTEXT_TEMPLATE='%n'
-POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND=015 # white
-POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND=000 # black
+POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='white'
+POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='clear'
 
-POWERLEVEL9K_DIR_HOME_FOREGROUND=015
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND=015
-POWERLEVEL9K_DIR_ETC_FOREGROUND=015
-POWERLEVEL9K_DIR_DEFAULT_FOREGROUND=015
+POWERLEVEL9K_DIR_HOME_FOREGROUND='white'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='white'
+POWERLEVEL9K_DIR_ETC_FOREGROUND='white'
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='white'
 
-POWERLEVEL9K_DIR_HOME_BACKGROUND=000
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND=000
-POWERLEVEL9K_DIR_ETC_BACKGROUND=000
-POWERLEVEL9K_DIR_DEFAULT_BACKGROUND=000
+POWERLEVEL9K_DIR_HOME_BACKGROUND='clear'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='clear'
+POWERLEVEL9K_DIR_ETC_BACKGROUND='clear'
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='clear'
 
-# `vcs` color customization
-POWERLEVEL9K_VCS_CLEAN_FOREGROUND=015
-POWERLEVEL9K_VCS_CLEAN_BACKGROUND=000
+POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND='red'
+POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND='clear'
+
+POWERLEVEL9K_VIRTUALENV_FOREGROUND='blue'
+POWERLEVEL9K_VIRTUALENV_BACKGROUND='clear'
+
+POWERLEVEL9K_VCS_CLEAN_FOREGROUND='white'
+POWERLEVEL9K_VCS_CLEAN_BACKGROUND='clear'
 POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='yellow'
-POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=000
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='clear'
 POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='red'
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=000
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='clear'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -121,12 +136,12 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig='vim ~/.zshrc'
+alias py="python"
+alias ids='cd ~/Projects/IDS/Assignment_2/'
