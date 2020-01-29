@@ -1,0 +1,12 @@
+{
+    "editor.fontFamily": "'Hack Nerd Font', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "latex-workshop.chktex.enabled": true,
+    "latex-workshop.chktex.run": "onType",
+    "latex-workshop.intellisense.package.enabled": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Community Material Theme Darker High Contrast"
+}
