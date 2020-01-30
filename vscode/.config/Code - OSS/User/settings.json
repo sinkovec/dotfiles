@@ -7,6 +7,5 @@
     "latex-workshop.intellisense.package.enabled": true,
     "latex-workshop.view.pdf.viewer": "tab",
     "window.zoomLevel": 0,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Visual Studio Dark"
+    "workbench.iconTheme": "material-icon-theme"
 }
