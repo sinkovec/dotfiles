@@ -1,18 +1,17 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# Configuration file for zsh
 
-TERM="xterm-256color"
+# TERM="xterm-256color"
 
 # Path to your oh-my-zsh installation.
 export ZSH=/usr/share/oh-my-zsh
 export ZSH_CUSTOM=$ZSH/custom
 
+# environment variables
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/jre
 export PIPENV_VENV_IN_PROJECT=1
+export EDITOR=/usr/bin/vim
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# zsh theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_MODE="nerdfont-complete"
 source $ZSH_CUSTOM/themes/powerlevel10k/powerlevel10k.zsh-theme
@@ -28,13 +27,16 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir dir_writable virtualenv v
 
 POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR='%F{008}\uf460%F{008}'
 
+# os icon
 POWERLEVEL9K_OS_ICON_BACKGROUND='clear'
 POWERLEVEL9K_OS_ICON_FOREGROUND='white'
 
+# context
 POWERLEVEL9K_CONTEXT_TEMPLATE='%n'
 POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='white'
 POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='clear'
 
+# directories
 POWERLEVEL9K_DIR_HOME_FOREGROUND='white'
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='white'
 POWERLEVEL9K_DIR_ETC_FOREGROUND='white'
@@ -45,24 +47,21 @@ POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='clear'
 POWERLEVEL9K_DIR_ETC_BACKGROUND='clear'
 POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='clear'
 
+# writable
 POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND='red'
 POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND='clear'
 
+# virtualenv
 POWERLEVEL9K_VIRTUALENV_FOREGROUND='blue'
 POWERLEVEL9K_VIRTUALENV_BACKGROUND='clear'
 
+# vcs
 POWERLEVEL9K_VCS_CLEAN_FOREGROUND='white'
 POWERLEVEL9K_VCS_CLEAN_BACKGROUND='clear'
 POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='yellow'
 POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='clear'
 POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='red'
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='clear'
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -108,15 +107,12 @@ POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='clear'
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
+# plugins
 plugins=(git)
+
+# source external plugins
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source $ZSH/oh-my-zsh.sh
 
@@ -141,7 +137,6 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-alias zshconfig='vim ~/.zshrc'
-alias py="python"
+alias zshrc='$EDITOR ~/.zshrc'
+alias py='python'
 alias ids='cd ~/Projects/IDS/Assignment_2/'
