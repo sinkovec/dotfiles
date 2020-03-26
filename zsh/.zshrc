@@ -139,4 +139,6 @@ source $ZSH/oh-my-zsh.sh
 #
 alias zshrc='$EDITOR ~/.zshrc'
 alias py='python'
+alias neofetch='neofetch | lolcat'
+alias uni='cd ~/University/'
 alias ids='cd ~/Projects/IDS/Assignment_2/'

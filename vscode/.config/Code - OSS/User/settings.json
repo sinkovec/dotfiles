@@ -7,5 +7,8 @@
     "latex-workshop.intellisense.package.enabled": true,
     "latex-workshop.view.pdf.viewer": "tab",
     "window.zoomLevel": 0,
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.wrappingIndent": "indent",
+    "editor.wordWrap": "on",
+    "liveshare.presence": true
 }
