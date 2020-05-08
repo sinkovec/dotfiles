@@ -29,6 +29,7 @@
 		],
 		"description": "Insert a theorem environment"
 	},
+	// math snippets
 	"math-inline": {
 		"prefix": "mk",
 		"body": "\\($1\\)$0",
@@ -59,204 +60,237 @@
 		"body": "\\text{ $1 } $0",
 		"description": "Insert a text (inside a math environment)"
 	},
+	// logical operators
 	"logical-not": {
-		"prefix": "lnot",
+		"prefix": "ln",
 		"body": "\\lnot ",
 		"description": "Insert a logical not"
 	},
 	"logical-and": {
-		"prefix": "land",
+		"prefix": "la",
 		"body": "\\land ",
 		"description": "Insert a logical and"
 	},
 	"logical-or": {
-		"prefix": "lor",
+		"prefix": "lo",
 		"body": "\\lor ",
 		"description": "Insert a logical or"
 	},
+	"implication": {
+		"prefix": "ra",
+		"body": "\\rightarrow",
+		"description": "Insert a implication arrow"
+	},
+	// additonal greek letter snipptes
+	"Sigma*": {
+		"prefix": "s*",
+		"body": "\\(\\Sigma^* $1\\)$0",
+		"description": "Insert Sigma*"
+	},
+	"psi-short": {
+		"prefix": "ps",
+		"body": "\\psi",
+		"description": "Insert psi"
+	},
+	"phi-short": {
+		"prefix": "ph",
+		"body": "\\phi",
+		"description": "Insert phi"
+	},
+	"Psi-short": {
+		"prefix": "Ps",
+		"body": "\\Psi",
+		"description": "Insert Psi"
+	},
+	"Phi-short": {
+		"prefix": "Ph",
+		"body": "\\Phi",
+		"description": "Insert Phi"
+	},
+	// Greek letters inside a inline math environment
 	"alpha": {
 		"prefix": "alpha",
-		"body": "\\(\\alpha \\)",
+		"body": "\\(\\alpha $1\\)$0",
 		"description": "Insert alpha"
 	},
 	"beta": {
 		"prefix": "beta",
-		"body": "\\(\\beta \\)",
+		"body": "\\(\\beta $1\\)$0",
 		"description": "Insert beta"
 	},
 	"chi": {
 		"prefix": "chi",
-		"body": "\\(\\chi \\)",
+		"body": "\\(\\chi $1\\)$0",
 		"description": "Insert chi"
 	},
 	"delta": {
 		"prefix": "delta",
-		"body": "\\(\\delta \\)",
+		"body": "\\(\\delta $1\\)$0",
 		"description": "Insert delta"
 	},
 	"epsilon": {
 		"prefix": "epsilon",
-		"body": "\\(\\epsilon \\)",
+		"body": "\\(\\epsilon $1\\)$0",
 		"description": "Insert epsilon"
 	},
 	"varepsilon": {
 		"prefix": "varepsilon",
-		"body": "\\(\\varepsilon \\)",
+		"body": "\\(\\varepsilon $1\\)$0",
 		"description": "Insert varepsilon"
 	},
 	"phi": {
 		"prefix": "phi",
-		"body": "\\(\\phi \\)",
+		"body": "\\(\\phi $1\\)$0",
 		"description": "Insert phi"
 	},
 	"varphi": {
 		"prefix": "varphi",
-		"body": "\\(\\varphi \\)",
+		"body": "\\(\\varphi $1\\)$0",
 		"description": "Insert varphi"
 	},
 	"gamma": {
 		"prefix": "gamma",
-		"body": "\\(\\gamma \\)",
+		"body": "\\(\\gamma $1\\)$0",
 		"description": "Insert gamma"
 	},
 	"eta": {
 		"prefix": "eta",
-		"body": "\\(\\eta \\)",
+		"body": "\\(\\eta $1\\)$0",
 		"description": "Insert eta"
 	},
 	"iota": {
 		"prefix": "iota",
-		"body": "\\(\\iota \\)",
+		"body": "\\(\\iota $1\\)$0",
 		"description": "Insert iota"
 	},
 	"kappa": {
 		"prefix": "kappa",
-		"body": "\\(\\kappa \\)",
+		"body": "\\(\\kappa $1\\)$0",
 		"description": "Insert kappa"
 	},
 	"lambda": {
 		"prefix": "lambda",
-		"body": "\\(\\lambda \\)",
+		"body": "\\(\\lambda $1\\)$0",
 		"description": "Insert lambda"
 	},
 	"mu": {
 		"prefix": "mu",
-		"body": "\\(\\mu \\)",
+		"body": "\\(\\mu $1\\)$0",
 		"description": "Insert mu"
 	},
 	"nu": {
 		"prefix": "nu",
-		"body": "\\(\\nu \\)",
+		"body": "\\(\\nu $1\\)$0",
 		"description": "Insert nu"
 	},
 	"pi": {
 		"prefix": "pi",
-		"body": "\\(\\pi \\)",
+		"body": "\\(\\pi $1\\)$0",
 		"description": "Insert pi"
 	},
 	"theta": {
 		"prefix": "theta",
-		"body": "\\(\\theta \\)",
+		"body": "\\(\\theta $1\\)$0",
 		"description": "Insert theta"
 	},
 	"vartheta": {
 		"prefix": "vartheta",
-		"body": "\\(\\vartheta \\)",
+		"body": "\\(\\vartheta $1\\)$0",
 		"description": "Insert vartheta"
 	},
 	"rho": {
 		"prefix": "rho",
-		"body": "\\(\\rho \\)",
+		"body": "\\(\\rho $1\\)$0",
 		"description": "Insert rho"
 	},
 	"sigma": {
 		"prefix": "sigma",
-		"body": "\\(\\sigma \\)",
+		"body": "\\(\\sigma $1\\)$0",
 		"description": "Insert sigma"
 	},
 	"varsigma": {
 		"prefix": "varsigma",
-		"body": "\\(\\varsigma \\)",
+		"body": "\\(\\varsigma $1\\)$0",
 		"description": "Insert varsigma"
 	},
 	"tau": {
 		"prefix": "tau",
-		"body": "\\(\\tau \\)",
+		"body": "\\(\\tau $1\\)$0",
 		"description": "Insert tau"
 	},
 	"upsilon": {
 		"prefix": "upsilon",
-		"body": "\\(\\upsilon \\)",
+		"body": "\\(\\upsilon $1\\)$0",
 		"description": "Insert upsilon"
 	},
 	"omega": {
 		"prefix": "omega",
-		"body": "\\(\\omega \\)",
+		"body": "\\(\\omega $1\\)$0",
 		"description": "Insert omega"
 	},
 	"xi": {
 		"prefix": "xi",
-		"body": "\\(\\xi \\)",
+		"body": "\\(\\xi $1\\)$0",
 		"description": "Insert xi"
 	},
 	"psi": {
 		"prefix": "psi",
-		"body": "\\(\\psi \\)",
+		"body": "\\(\\psi $1\\)$0",
 		"description": "Insert psi"
 	},
 	"zeta": {
 		"prefix": "zeta",
-		"body": "\\(\\zeta \\)",
+		"body": "\\(\\zeta $1\\)$0",
 		"description": "Insert zeta"
 	},
 	"Delta": {
 		"prefix": "Delta",
-		"body": "\\(\\Delta \\)",
+		"body": "\\(\\Delta $1\\)$0",
 		"description": "Insert Delta"
 	},
 	"Phi": {
 		"prefix": "Phi",
-		"body": "\\(\\Phi \\)",
+		"body": "\\(\\Phi $1\\)$0",
 		"description": "Insert Phi"
 	},
 	"Gamma": {
 		"prefix": "Gamma",
-		"body": "\\(\\Gamma \\)",
+		"body": "\\(\\Gamma $1\\)$0",
 		"description": "Insert Gamma"
 	},
 	"Theta": {
 		"prefix": "Theta",
-		"body": "\\(\\Theta \\)",
+		"body": "\\(\\Theta $1\\)$0",
 		"description": "Insert Theta"
 	},
 	"Lambda": {
 		"prefix": "Lambda",
-		"body": "\\(\\Lambda \\)",
+		"body": "\\(\\Lambda $1\\)$0",
 		"description": "Insert Lambda"
 	},
 	"Xi": {
 		"prefix": "Xi",
-		"body": "\\(\\Xi \\)",
+		"body": "\\(\\Xi $1\\)$0",
 		"description": "Insert Xi"
 	},
 	"Psi": {
 		"prefix": "Psi",
-		"body": "\\(\\Psi \\)",
+		"body": "\\(\\Psi $1\\)$0",
 		"description": "Insert Psi"
 	},
 	"Sigma": {
 		"prefix": "Sigma",
-		"body": "\\(\\Sigma \\)",
+		"body": "\\(\\Sigma $1\\)$0",
 		"description": "Insert Sigma"
 	},
 	"Upsilon": {
 		"prefix": "Upsilon",
-		"body": "\\(\\Upsilon \\)",
+		"body": "\\(\\Upsilon $1\\)$0",
 		"description": "Insert Upsilon"
 	},
 	"Omega": {
 		"prefix": "Omega",
-		"body": "\\(\\Omega \\)",
+		"body": "\\(\\Omega $1\\)$0",
 		"description": "Insert Omega"
 	}
 }
