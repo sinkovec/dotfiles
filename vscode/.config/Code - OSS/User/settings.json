@@ -10,5 +10,10 @@
     "workbench.iconTheme": "material-icon-theme",
     "editor.wrappingIndent": "indent",
     "editor.wordWrap": "on",
-    "liveshare.presence": true
+    "liveshare.presence": true,
+
+    // disable gitlens inline comments
+    // "gitlens.currentLine.enabled": false,
+    // "gitlens.codeLens.authors.enabled": false,
+    // "gitlens.codeLens.recentChange.enabled": false,
 }

@@ -11,6 +11,10 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/jre
 export PIPENV_VENV_IN_PROJECT=1
 export EDITOR=/usr/bin/vim
 
+path+=("$(ruby -e 'puts Gem.user_dir')/bin")
+
+export PATH
+
 # zsh theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_MODE="nerdfont-complete"
@@ -143,5 +147,5 @@ alias neofetch='neofetch | lolcat'
 alias uni='cd ~/University/'
 alias malo='cd ~/University/ss20/MaLo/Uebung/'
 alias fosap='cd ~/University/ss20/FoSAP/Uebung/'
-alias sle='cd ~/University/ss20/SLE/Exercises/'
-alias psp='cd ~/University/ss20/PSP/'
+alias sle='cd ~/University/ss20/SLE/Project/sd-language'
+alias psp='cd ~/University/ss20/PSP/Versuche'
