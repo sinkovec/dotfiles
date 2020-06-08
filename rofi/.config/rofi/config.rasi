@@ -24,7 +24,7 @@
 
 window {
 	/*fullscreen: true;*/
-	background-color: #383838;
+	background-color: #181818;
 }
 
 mainbox {
