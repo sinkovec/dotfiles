@@ -7,7 +7,7 @@ export ZSH=/usr/share/oh-my-zsh
 export ZSH_CUSTOM=$ZSH/custom
 
 # environment variables
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/jre
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 export PIPENV_VENV_IN_PROJECT=1
 export EDITOR=/usr/bin/vim
 

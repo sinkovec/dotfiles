@@ -11,6 +11,7 @@
     "editor.wrappingIndent": "indent",
     "editor.wordWrap": "on",
     "liveshare.presence": true,
+    "diffEditor.ignoreTrimWhitespace": false,
 
     // disable gitlens inline comments
     // "gitlens.currentLine.enabled": false,
